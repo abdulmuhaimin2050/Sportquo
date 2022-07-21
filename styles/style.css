@@ -29,6 +29,8 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #FFFFFF;
+    animation: head 3s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
 }
 
 .title-div p {
@@ -44,6 +46,12 @@ body {
     color: #FFFFFF;
     background-color: #DD0000;
     border-radius: 5px;
+    transition: font-size 1s ease-in-out, color 3s, background-color 3s;
+}
+.button:hover{
+    font-size: 2vw;
+    background-color: yellow;
+    color: black;
 }
 
 .fa-angle-right{
@@ -120,10 +128,12 @@ body {
     padding: 20px;
 }
 
-.trans-button {
-    width: 100px;
-    height: 32px;
+.ancor{
+    text-decoration: none;
+    padding: 3px 15px;
+    border: 2px solid;
     border-radius: 5px;
+    color: black;
 }
 
 .comment-div {
@@ -408,3 +418,22 @@ hr {
         display: none;
     }
 }
+
+/* =========================
+    animation add 
+============================ */
+@keyframes head {
+    0%{
+        color: #DD0000;
+    }
+    50%{
+        color:  lightgoldenrodyellow;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+/*=================
+     END           
+=================== */

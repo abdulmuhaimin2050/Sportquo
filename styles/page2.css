@@ -29,6 +29,8 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #FFFFFF;
+    animation: head 3s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
 }
 
 .title-div p {
@@ -39,12 +41,19 @@ body {
 
 .button {
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding:2% 1%;
     color: #FFFFFF;
     background-color: #DD0000;
     border-radius: 5px;
+    transition: font-size 1s ease-in-out, color 3s, background-color 3s;
 }
+.button:hover{
+    font-size: 2vw;
+    background-color: yellow;
+    color: black;
+}
+
 
 .title-img {
     width: 40%;
@@ -317,7 +326,7 @@ hr {
 }
 
 /* =================
-    teblet view
+    teb view
 ===================== */
 
 @media screen and (min-width: 577px) and (max-width:992px) {
@@ -357,5 +366,21 @@ hr {
     }
     #display-none{
         display: none;
+    }
+}
+
+/* =========================
+    animation add 
+============================ */
+
+@keyframes head {
+    0%{
+        color: #DD0000;
+    }
+    50%{
+        color:  lightgoldenrodyellow;
+    }
+    100%{
+        color: yellow;
     }
 }
