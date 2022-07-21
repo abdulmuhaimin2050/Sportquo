@@ -39,13 +39,16 @@ body {
 
 .button {
     text-decoration: none;
-    font-size: 20px;
-    padding: 16px 25px;
+    font-size: 1.5vw;
+    padding:2% 1%;
     color: #FFFFFF;
     background-color: #DD0000;
     border-radius: 5px;
 }
 
+.fa-angle-right{
+    margin-left: 5px;
+}
 .title-img {
     width: 40%;
     display: flex;
@@ -139,6 +142,24 @@ body {
     color: gray;
 }
 
+.tab-button{
+    display: none;
+}
+.view-button{
+    width: 175px;
+    height: 100px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.view-button a{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #DD0000;
+    border-radius: 5px;
+}
 /* -------------
     footer      
 ---------------- */
@@ -272,6 +293,7 @@ hr {
     /* =====================
         main-content        
     ========================= */
+
     .flex-div {
         width: 100%;
         margin: auto;
@@ -338,9 +360,11 @@ hr {
     }
 }
 
+
 /* =================
     teblet view
 ===================== */
+
 
 @media screen and (min-width: 577px) and (max-width:992px) {
     .header{
@@ -368,6 +392,9 @@ hr {
     }
     .display-none{
         visibility: hidden;
+    }
+    .tab-button{
+        display: block;
     }
     .links{
         flex-wrap: wrap;
