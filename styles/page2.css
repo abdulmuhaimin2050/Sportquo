@@ -61,7 +61,7 @@ body {
 ----------------------- */
 
 .flex-div {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
 }
@@ -100,45 +100,23 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
     margin-bottom: 50px;
-    flex-grow: 1;
+    grid-gap: 24px;
 }
 
-
-.post-div {
+.match-details{
     width: 312px;
-    height: 362px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-}
-
-.post-info {
+    height: 242px;
     padding: 20px;
-}
-
-.trans-button {
-    width: 100px;
-    height: 32px;
+    border: 1px solid lightgray;
     border-radius: 5px;
+    text-align: center;
 }
-
-.comment-div {
-    width: 50%;
-    margin-bottom: 5px;
+.flag-div{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
-
-.fa-clock {
-    color: gray;
-}
-
-.fa-comment-dots {
-    color: gray;
-}
-
 /* -------------
     footer      
 ---------------- */
